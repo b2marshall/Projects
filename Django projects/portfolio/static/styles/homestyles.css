@@ -1,7 +1,20 @@
-h1 {
-    color: purple;
+body {
+    background: url(../images/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+h1.main-heading {
+    color: whitesmoke;
+
 }
-a {
-    color: black;
+
+#about-me {
+    color: whitesmoke;
     
+}
+
+a {
+    color: whitesmoke;
+    font-size: x-large;
 }
