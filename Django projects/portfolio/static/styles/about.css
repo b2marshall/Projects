@@ -4,13 +4,7 @@ body {
     background-repeat: no-repeat;
   }
 
-#main-heading {
-    color: whitesmoke;
-    opacity: 0.75;
-}
-
-
-li a {
+  li a {
     display: block;
     color: black;
     background-color: violet;
@@ -28,5 +22,3 @@ ul {
     width: 200px;
     background-color: violet;
   }
-
-
