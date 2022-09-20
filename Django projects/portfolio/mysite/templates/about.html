@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 {% load static %}
+<link rel="stylesheet" href="{% static 'styles/about.css' %}">
 <html>
-    <head>
-        <link rel="stylesheet" href="{% static 'styles/about.css' %}">
-        <title>About Me</title>
-    </head>
-    <body>
+
+<head>
+    <title>About Me</title>
+</head>
+
+<body>
     <div class="navbar">
         <ul>
-        <li class="navbar"><a href="./home.html">Home</a></li>
-        <li class="navbar"><a href="./contact.html">Contact me</a></li>
+            <li><a href="./home.html">Home</a></li>
+                <li><button class="dropdown-btn">Interests
+                    <i class="fa fa-caret-down">&#9660;</i>
+                </button>
+                  <div class="dropdown-container">
+                    <a href="#">Math</a>
+                    <a href="#">Music</a>
+                    <a href="#">Cats</a>
+                  </div>
+                
+                </li>
+                  <script>
+                    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                    var dropdown = document.getElementsByClassName("dropdown-btn");
+                    var i;
+                    
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var dropdownContent = this.nextElementSibling;
+                        if (dropdownContent.style.display === "block") {
+                          dropdownContent.style.display = "none";
+                        } else {
+                          dropdownContent.style.display = "block";
+                        }
+                      });
+                    }
+                    </script>
+
+                
+                </div>
+            </li>
         </ul>
 
     </div>
 
-    </body>
+</body>
 
 </html>
