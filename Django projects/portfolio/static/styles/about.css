@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
   }
 
-  li a, li button {
+  li a {
     list-style: none;
     display: block;
     color: black;
@@ -22,35 +22,18 @@ body {
     width: 200px;
   }
 
-
-  ul {
-    list-style-type: none;
-    /*left: 200px;*/
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(92,6,95,255);
-    overflow-x: hidden;
-  }
-
-
-  li:hover, .dropdown-btn:hover {
-    background-color: violet;
-  }
-
-  .dropdown-container {
-    display: none;
-    background-color: rgba(92,6,95,255);
-    /*padding-left: 8px;*/
-  }
-
-
-  .dropdown-content li {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+  li button {
+    list-style: none;
     display: block;
+    color: black;
+    background-color: rgba(92,6,95,255);
+    border:3px solid black;
+    opacity: 0.85;
+    font-size: x-large;
+    padding: 8px 16px;
+    text-decoration: none;
     text-align: left;
+    width: 238px;
   }
 
   .fa-caret-down {
@@ -58,28 +41,7 @@ body {
     padding-right: 8px;
   }
 
-  .dropdown-container a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
+  li a:hover, button:hover {
+    background-color: violet;
   }
 
-  /*.navbar {
-    height: 30%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(92,6,95,255);
-    overflow-x: hidden;
-    /*padding-top: 50px;
-  }*/
